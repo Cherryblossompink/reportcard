@@ -14,5 +14,9 @@ CREATE TABLE if not exists report_card (
  INSERT INTO report_card VALUES (5, 'Lily', '9', 'A', 'A', 'B', 'B');
  INSERT INTO report_card VALUES (6, 'Sandra', '10', 'A', 'B', 'C', 'B');
  INSERT INTO report_card VALUES (7, 'Jonathan', '10', 'D', 'C', 'F', 'F');
- INSERT INTO report_card VALUES (8, 'Candle', '75467', NULL, NULL, 'B', 'A');
+ INSERT INTO report_card VALUES (8, 'Stinky Sock', '2', NULL, NULL, NULL, NULL);
+ INSERT INTO report_card VALUES (9, 'Lisa', '9', 'A', 'A', 'B', 'B');
  SELECT * FROM report_card;
+ SELECT DISTINCT Name, Age, Eng, Sci, Math, Hindi
+ FROM report_card;
+SELECT AVG(Math) AS AVGMATH FROM report_card;
